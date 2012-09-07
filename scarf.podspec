@@ -13,5 +13,5 @@ Pod::Spec.new do |s|
     }
     s.source_files  = 'Scarf'
     s.requires_arc  = true
-    s.dependency      'CocoaAsyncSocket', '~> 7.1'
+    s.dependency      'CocoaAsyncSocket'
 end
