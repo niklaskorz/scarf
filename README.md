@@ -30,3 +30,8 @@ So if you want to place it somewhere else, just make sure you change the import 
 Projects using Scarf
 --------------------
 For now, this list is empty. Anyway, it would be nice of you to contact me if you use **Scarf** in one of your projects.
+
+Other platforms
+--------------------------
+It may be possible to use Scarf on other platforms. Grand Central Dispatch is also available on [FreeBSD](http://wiki.freebsd.org/GCD "Grand Central Dispatch (GCD) on FreeBSD") and Linux ([Debian](http://packages.debian.org/sid/libdispatch0 "user space implementation of the Grand Central Dispatch API"), [source](http://libdispatch.macosforge.org/)), and you're free to port libdispatch to your favorite system, since it's [open source](http://libdispatch.macosforge.org/).
+Aside of that, you'll also need a port of the [Foundation Framework](http://developer.apple.com/library/mac/#documentation/cocoa/reference/foundation/ObjC_classic/_index.html "Foundation Framework Reference"), like [GNUStep](http://www.gnustep.org/), and a compiler with support for the new Objective-C literals (Clang 4.0 or newer).
