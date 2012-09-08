@@ -1,44 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Scarf by dindresto</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
     <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+    <title>Scarf by dindresto</title>
   </head>
+
   <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/dindresto/scarf">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/dindresto/scarf/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/dindresto/scarf/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
+    <header>
+      <div class="inner">
+        <h1>Scarf</h1>
+        <h2>Non-blocking web server for Objective-C</h2>
+        <a href="https://github.com/dindresto/scarf" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
 
-    <div class="wrapper">
-
-      <section>
-        <div id="title">
-          <h1>Scarf</h1>
-          <p>Non-blocking web server for Objective-C (OS X and iOS)</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/dindresto">dindresto</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
-        </div>
-
-        <p><strong>Scarf</strong> is a non-blocking web server for Objective-C, supporting both OS X and iOS.</p>
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <p><strong>Scarf</strong> is a non-blocking web server for Objective-C, supporting both OS X and iOS.</p>
 
 <p><strong>Dependencies:</strong></p>
 
@@ -48,7 +38,7 @@
 <li><a href="https://github.com/robbiehanson/CocoaAsyncSocket">CocoaAsyncSocket</a></li>
 </ul><h2>License</h2>
 
-<p><strong>Scarf</strong> uses the MIT license. See <code>LICENSE</code> for more information.</p>
+<p><strong>Scarf</strong> uses the MIT license. See <a href="https://raw.github.com/dindresto/scarf/master/LICENSE">LICENSE</a> for more information.</p>
 
 <h2>Usage</h2>
 
@@ -79,11 +69,26 @@ See the <a href="https://github.com/dindresto/scarf/wiki">wiki</a> for examples 
 
 <p>It may be possible to use <strong>Scarf</strong> on other platforms. Grand Central Dispatch is also available on <a href="http://wiki.freebsd.org/GCD" title="Grand Central Dispatch (GCD) on FreeBSD">FreeBSD</a> and Linux (<a href="http://packages.debian.org/sid/libdispatch0" title="user space implementation of the Grand Central Dispatch API">Debian</a>, <a href="http://libdispatch.macosforge.org/">source</a>), and you're free to port libdispatch to your favorite system, since it's <a href="http://libdispatch.macosforge.org/">open source</a>.
 Aside of that, you'll also need a port of the <a href="http://developer.apple.com/library/mac/#documentation/cocoa/reference/foundation/ObjC_classic/_index.html" title="Foundation Framework Reference">Foundation Framework</a>, like <a href="http://www.gnustep.org/">GNUStep</a>, and a compiler with support for the new Objective-C literals (Clang 4.0 or newer).</p>
-      </section>
+        </section>
 
+        <aside id="sidebar">
+          <a href="https://github.com/dindresto/scarf/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/dindresto/scarf/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/dindresto/scarf"></a> is maintained by <a href="https://github.com/dindresto">dindresto</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-              <script type="text/javascript">
+
+            <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
