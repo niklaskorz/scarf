@@ -40,6 +40,26 @@
 
 <p><strong>Scarf</strong> uses the MIT license. See <a href="https://raw.github.com/dindresto/scarf/master/LICENSE">LICENSE</a> for more information.</p>
 
+<h2>Simple Example</h2>
+
+<div class="highlight"><pre><span class="n">SCHTTPRequestHandler</span> <span class="o">*</span><span class="n">indexHandler</span> <span class="o">=</span> <span class="p">[[</span><span class="n">SCHTTPRequestHandler</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">init</span><span class="p">];</span>
+<span class="p">[</span><span class="n">indexHandler</span> <span class="nl">setHandlerBlock:</span><span class="o">^</span><span class="p">(</span><span class="n">SCHTTPRequest</span> <span class="o">*</span><span class="n">request</span><span class="p">,</span> <span class="n">SCHTTPResponse</span> <span class="o">*</span><span class="n">response</span><span class="p">)</span> <span class="p">{</span>
+    <span class="p">[</span><span class="n">response</span> <span class="nl">write:</span><span class="s">@"Hello World!"</span><span class="p">];</span>
+    <span class="k">return</span> <span class="n">YES</span><span class="p">;</span>
+<span class="p">}</span> <span class="nl">forMethod:</span><span class="s">@"GET"</span><span class="p">];</span>
+
+<span class="n">NSDictionary</span> <span class="o">*</span><span class="n">routes</span> <span class="o">=</span> <span class="err">@</span><span class="p">{</span>
+    <span class="s">@"/"</span><span class="o">:</span> <span class="n">indexHandler</span>
+<span class="p">};</span>
+
+<span class="n">SCHTTPServer</span> <span class="o">*</span><span class="n">server</span> <span class="o">=</span> <span class="p">[[</span><span class="n">SCHTTPServer</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithRoutes:</span><span class="n">routes</span><span class="p">];</span>
+<span class="n">NSError</span> <span class="o">*</span><span class="n">error</span><span class="p">;</span>
+<span class="p">[</span><span class="n">server</span> <span class="nl">listenToPort:</span><span class="mi">8080</span> <span class="nl">error:</span><span class="o">&amp;</span><span class="n">error</span><span class="p">];</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">NSLog</span><span class="s">@"Couldn't start HTTP server: %@"</span><span class="p">,</span> <span class="n">error</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
 <h2>Usage</h2>
 
 <p>You might have noticed that <strong>Scarf</strong> doesn't have any Xcode project files. Instead, you're encouraged to use <a href="https://github.com/CocoaPods/CocoaPods">CocoaPods</a>. Though you're free to copy the source files directly into your project (but keep in mind that you'll also need to add <a href="https://github.com/robbiehanson/CocoaAsyncSocket">CocoaAsyncSocket</a> yourself in this case).
