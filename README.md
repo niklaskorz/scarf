@@ -8,7 +8,7 @@
 
 License
 -------
-**Scarf** uses the MIT license. See `LICENSE` for more information.
+**Scarf** uses the MIT license. See [LICENSE](https://raw.github.com/dindresto/scarf/master/LICENSE) for more information.
 
 Usage
 -----
