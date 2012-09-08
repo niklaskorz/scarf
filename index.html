@@ -49,15 +49,15 @@ See the <a href="https://github.com/dindresto/scarf/wiki">wiki</a> for examples 
 
 <p>In this case, you'll just need a Podfile in your project (see the <a href="https://github.com/CocoaPods/CocoaPods/wiki">CocoaPods wiki</a> for more information) with <strong>Scarf</strong> as a dependency:</p>
 
-<pre><code>pod 'Scarf', :git =&gt; 'https://github.com/dindresto/scarf.git'
-</code></pre>
+<div class="highlight"><pre><span class="n">pod</span> <span class="s1">'Scarf'</span><span class="p">,</span> <span class="ss">:git</span> <span class="o">=&gt;</span> <span class="s1">'https://github.com/dindresto/scarf.git'</span>
+</pre></div>
 
 <h3>Without CocoaPods</h3>
 
 <p>Make sure that you also add <a href="https://github.com/robbiehanson/CocoaAsyncSocket">CocoaAsyncSocket</a> to your project. <strong>Scarf</strong> assumes that the CocoaAsyncSocket directory is in your header search path, so it can import GCDAsyncSocket:</p>
 
-<pre><code>#import &lt;CocoaAsyncSocket/GCDAsyncSocket.h&gt;
-</code></pre>
+<div class="highlight"><pre><span class="cp">#import &lt;CocoaAsyncSocket/GCDAsyncSocket.h&gt;</span>
+</pre></div>
 
 <p>So if you want to place it somewhere else, just make sure you change the import directives.</p>
 
