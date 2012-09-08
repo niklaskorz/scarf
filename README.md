@@ -10,6 +10,27 @@ License
 -------
 **Scarf** uses the MIT license. See [LICENSE](https://raw.github.com/dindresto/scarf/master/LICENSE) for more information.
 
+Simple Example
+--------------
+```objc
+SCHTTPRequestHandler *indexHandler = [[SCHTTPRequestHandler alloc] init];
+[indexHandler setHandlerBlock:^(SCHTTPRequest *request, SCHTTPResponse *response) {
+    [response write:@"Hello World!"];
+    return YES;
+} forMethod:@"GET"];
+
+NSDictionary *routes = @{
+    @"/": indexHandler
+};
+
+SCHTTPServer *server = [[SCHTTPServer alloc] initWithRoutes:routes];
+NSError *error;
+[server listenToPort:8080 error:&error];
+if (error) {
+    NSLog@"Couldn't start HTTP server: %@", error);
+}
+```
+
 Usage
 -----
 You might have noticed that **Scarf** doesn't have any Xcode project files. Instead, you're encouraged to use [CocoaPods](https://github.com/CocoaPods/CocoaPods). Though you're free to copy the source files directly into your project (but keep in mind that you'll also need to add [CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket) yourself in this case).
