@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     s.name          = 'Scarf'
     s.version       = '0.1'
-    s.license       = 'MIT'
+    s.license       = 'https://raw.github.com/dindresto/scarf/master/LICENSE'
     s.summary       = ''
     s.homepage      = 'https://github.com/dindresto/scarf'
     s.author        = {
@@ -13,5 +13,6 @@ Pod::Spec.new do |s|
     }
     s.source_files  = 'Scarf'
     s.requires_arc  = true
-    s.dependency      'CocoaAsyncSocket', '~> 0.0.1'
+    s.dependency      'CocoaAsyncSocket'
+    s.dependency      'CocoaLumberjack'
 end
