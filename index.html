@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Scarf by dindresto</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/dindresto/scarf">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/dindresto/scarf/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/dindresto/scarf/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Scarf</h1>
+          <p>Non-blocking web server for Objective-C (OS X and iOS)</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/dindresto">dindresto</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <p><strong>Scarf</strong> is a non-blocking web server for Objective-C, supporting both OS X and iOS.</p>
+
+<p><strong>Dependencies:</strong></p>
+
+<ul>
+<li>Grand Central Dispatch (OS X 10.6 or newer, iOS 4.0 or newer)</li>
+<li>New Objective-C literals (Clang 4.0 or newer)</li>
+<li><a href="https://github.com/robbiehanson/CocoaAsyncSocket">CocoaAsyncSocket</a></li>
+</ul><h2>License</h2>
+
+<p><strong>Scarf</strong> uses the MIT license. See <code>LICENSE</code> for more information.</p>
+
+<h2>Usage</h2>
+
+<p>You might have noticed that <strong>Scarf</strong> doesn't have any Xcode project files. Instead, you're encouraged to use <a href="https://github.com/CocoaPods/CocoaPods">CocoaPods</a>. Though you're free to copy the source files directly into your project (but keep in mind that you'll also need to add <a href="https://github.com/robbiehanson/CocoaAsyncSocket">CocoaAsyncSocket</a> yourself in this case).
+See the <a href="https://github.com/dindresto/scarf/wiki">wiki</a> for examples and documentation.</p>
+
+<h3>With CocoaPods</h3>
+
+<p>In this case, you'll just need a Podfile in your project (see the <a href="https://github.com/CocoaPods/CocoaPods/wiki">CocoaPods wiki</a> for more information) with <strong>Scarf</strong> as a dependency:</p>
+
+<pre><code>pod 'Scarf', :git =&gt; 'https://github.com/dindresto/scarf.git'
+</code></pre>
+
+<h3>Without CocoaPods</h3>
+
+<p>Make sure that you also add <a href="https://github.com/robbiehanson/CocoaAsyncSocket">CocoaAsyncSocket</a> to your project. <strong>Scarf</strong> assumes that the CocoaAsyncSocket directory is in your header search path, so it can import GCDAsyncSocket:</p>
+
+<pre><code>#import &lt;CocoaAsyncSocket/GCDAsyncSocket.h&gt;
+</code></pre>
+
+<p>So if you want to place it somewhere else, just make sure you change the import directives.</p>
+
+<h2>Projects using Scarf</h2>
+
+<p>For now, this list is empty. Anyway, it would be nice of you to contact me if you use <strong>Scarf</strong> in one of your projects.</p>
+
+<h2>Other platforms</h2>
+
+<p>It may be possible to use <strong>Scarf</strong> on other platforms. Grand Central Dispatch is also available on <a href="http://wiki.freebsd.org/GCD" title="Grand Central Dispatch (GCD) on FreeBSD">FreeBSD</a> and Linux (<a href="http://packages.debian.org/sid/libdispatch0" title="user space implementation of the Grand Central Dispatch API">Debian</a>, <a href="http://libdispatch.macosforge.org/">source</a>), and you're free to port libdispatch to your favorite system, since it's <a href="http://libdispatch.macosforge.org/">open source</a>.
+Aside of that, you'll also need a port of the <a href="http://developer.apple.com/library/mac/#documentation/cocoa/reference/foundation/ObjC_classic/_index.html" title="Foundation Framework Reference">Foundation Framework</a>, like <a href="http://www.gnustep.org/">GNUStep</a>, and a compiler with support for the new Objective-C literals (Clang 4.0 or newer).</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-32952642-2");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
