@@ -18,12 +18,16 @@ See the [wiki](https://github.com/dindresto/scarf/wiki) for examples and documen
 ###With CocoaPods
 In this case, you'll just need a Podfile in your project (see the [CocoaPods wiki](https://github.com/CocoaPods/CocoaPods/wiki) for more information) with **Scarf** as a dependency:
 
-	pod 'Scarf', :git => 'https://github.com/dindresto/scarf.git'
+```ruby
+pod 'Scarf', :git => 'https://github.com/dindresto/scarf.git'
+```
 
 ###Without CocoaPods
 Make sure that you also add [CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket) to your project. **Scarf** assumes that the CocoaAsyncSocket directory is in your header search path, so it can import GCDAsyncSocket:
 
-	#import <CocoaAsyncSocket/GCDAsyncSocket.h>
+```objc
+#import <CocoaAsyncSocket/GCDAsyncSocket.h>
+```
 
 So if you want to place it somewhere else, just make sure you change the import directives.
 
