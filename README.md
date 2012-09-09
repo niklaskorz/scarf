@@ -27,7 +27,7 @@ SCHTTPServer *server = [[SCHTTPServer alloc] initWithRoutes:routes];
 NSError *error;
 [server listenToPort:8080 error:&error];
 if (error) {
-    NSLog@"Couldn't start HTTP server: %@", error);
+    NSLog(@"Couldn't start HTTP server: %@", error);
 }
 ```
 
