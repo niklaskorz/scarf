@@ -44,13 +44,7 @@ pod 'Scarf', :git => 'https://github.com/dindresto/scarf.git'
 ```
 
 ###Without CocoaPods
-Make sure that you also add [CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket) to your project. **Scarf** assumes that the CocoaAsyncSocket directory is in your header search path, so it can import GCDAsyncSocket:
-
-```objc
-#import <CocoaAsyncSocket/GCDAsyncSocket.h>
-```
-
-So if you want to place it somewhere else, just make sure you change the import directives.
+Just make sure you also get [CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket).
 
 Projects using Scarf
 --------------------
